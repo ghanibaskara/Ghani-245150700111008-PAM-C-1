@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <View
+        android:id="@+id/view"
+        android:layout_width="422dp"
+        android:layout_height="75dp"
+        android:background="#FFC300"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/scrollableContainer"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view2">
+
+        <ScrollView
+            android:id="@+id/contentScrollView"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:background="#FFFFFF">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:paddingTop="64dp"
+                android:paddingBottom="88dp">
+
+                <LinearLayout
+                    android:id="@+id/profileSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="PROFILE"
+                            android:textColor="#FFC300"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="#023F75" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:fontFamily="@font/kumbhsans"
+                        android:text="Hi! My name is Ghani Baskara Syah. I am an undergraduate student at Brawwijaya University and a tech enthusiast that is deeply interested in Mobile Programming and Machine Learning."
+                        android:textAlignment="viewStart"
+                        android:textColor="#002E4F"
+                        android:textSize="14sp" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/skillsSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_marginTop="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="SKILLS"
+                            android:textColor="#FFC300"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="#023F75" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="14dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Leadership"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:progress="85"
+                            android:progressDrawable="@drawable/progress_bar" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Innovation"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:progress="80"
+                            android:progressDrawable="@drawable/progress_bar" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Teamwork"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:progress="90"
+                            android:progressDrawable="@drawable/progress_bar" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="0dp"
+                            android:text="Analytical"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:progress="75"
+                            android:progressDrawable="@drawable/progress_bar" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="4dp"
+                            android:text="Flexibility"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <ProgressBar
+                            style="?android:attr/progressBarStyleHorizontal"
+                            android:layout_width="match_parent"
+                            android:layout_height="8dp"
+                            android:progress="88"
+                            android:progressDrawable="@drawable/progress_bar" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/educationSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_marginTop="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="EDUCATION"
+                            android:textColor="#FFC300"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="#023F75" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SMPN 1 Srono"
+                            android:textColor="#002E4F"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | 2019 - 2021"
+                            android:textColor="#FFC300"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Completed junior high studies with a focus on academic foundations and student activities."
+                        android:textColor="#002E4F"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/kumbhsans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="SMAN 1 Genteng"
+                            android:textColor="#002E4F"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | 2021 - 2024"
+                            android:textColor="#FFC300"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Studied science and technology fundamentals, building interest in programming and problem solving."
+                        android:textColor="#002E4F"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/kumbhsans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Information Technology Major"
+                            android:textColor="#002E4F"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | 2024 - Present"
+                            android:textColor="#FFC300"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Brawijaya University"
+                            android:textColor="#FFC300"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | 4th Semester - 3.97 GPA"
+                            android:textColor="#023F75"
+                            android:textSize="12sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:text="Currently pursuing a Bachelor's Degree in Information Technology at Universitas Brawijaya, focusing on software development, networking, and cybersecurity."
+                        android:textColor="#002E4F"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/kumbhsans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/experienceSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:paddingBottom="16dp"
+                    android:layout_marginTop="0dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:text="EXPERIENCES"
+                            android:textColor="#FFC300"
+                            android:textSize="16sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="#023F75" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Junior Staff - Public Relation"
+                            android:textColor="#002E4F"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | 2024"
+                            android:textColor="#FFC300"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="KBMDSI"
+                        android:textColor="#FFC300"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/kumbhsans" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Assisted in communication, event organization, and stakeholder relations to enhance the organization's image."
+                        android:textColor="#002E4F"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/kumbhsans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Senior Staff - Media Creative"
+                            android:textColor="#002E4F"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | 2025"
+                            android:textColor="#FFC300"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="KBMDSI"
+                        android:textColor="#FFC300"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/kumbhsans" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="16dp"
+                        android:text="Assisted in content creation, design, and multimedia production to support the organization's creative initiatives."
+                        android:textColor="#002E4F"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/kumbhsans" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="horizontal"
+                        android:layout_marginBottom="8dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="App Programmer"
+                            android:textColor="#002E4F"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text=" | 2025 - Present"
+                            android:textColor="#FFC300"
+                            android:textSize="14sp"
+                            android:textStyle="bold"
+                            android:fontFamily="@font/kumbhsans" />
+                    </LinearLayout>
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="8dp"
+                        android:text="Raion Community"
+                        android:textColor="#FFC300"
+                        android:textSize="12sp"
+                        android:textStyle="bold"
+                        android:fontFamily="@font/kumbhsans" />
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:text="Active in learning and collaborating for an internal project. Focusing on developing android application using jetpack Compose."
+                        android:textColor="#002E4F"
+                        android:textSize="13sp"
+                        android:fontFamily="@font/kumbhsans" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:id="@+id/contactSection"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="0dp"
+                    android:orientation="vertical"
+                    android:padding="16dp"
+                    android:paddingBottom="16dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical"
+                        android:layout_marginBottom="16dp">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="8dp"
+                            android:fontFamily="@font/kumbhsans"
+                            android:text="CONTACT"
+                            android:textColor="#FFC300"
+                            android:textSize="16sp"
+                            android:textStyle="bold" />
+
+                        <View
+                            android:layout_width="60dp"
+                            android:layout_height="3dp"
+                            android:background="#023F75" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:contentDescription="Phone"
+                            android:src="@drawable/ic_phone" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kumbhsans"
+                            android:text="+62 852 3500 9468"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:contentDescription="Email"
+                            android:src="@drawable/ic_email" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kumbhsans"
+                            android:text="ghanibaskarasyah@gmail.com"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="12dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:contentDescription="LinkedIn"
+                            android:src="@drawable/ic_linkedin" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kumbhsans"
+                            android:text="Ghani Baskara Syah"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginBottom="24dp"
+                        android:orientation="horizontal">
+
+                        <ImageView
+                            android:layout_width="24dp"
+                            android:layout_height="24dp"
+                            android:layout_marginEnd="12dp"
+                            android:contentDescription="Instagram"
+                            android:src="@drawable/ic_instagram_new" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/kumbhsans"
+                            android:text="@ghanibaskaraa"
+                            android:textColor="#002E4F"
+                            android:textSize="12sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+
+        </ScrollView>
+
+    </LinearLayout>
+
+    <View
+        android:id="@+id/view2"
+        android:layout_width="412dp"
+        android:layout_height="98dp"
+        android:background="@drawable/b_gradient"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/view" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="214dp"
+        android:layout_height="275dp"
+        android:layout_marginStart="-24dp"
+        android:layout_marginTop="48dp"
+        android:contentDescription="@string/app_name"
+        android:translationY="-64dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/vector_2" />
+
+    <View
+        android:id="@+id/view3"
+        android:layout_width="124dp"
+        android:layout_height="124dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginTop="60dp"
+        android:background="@drawable/circle"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/profilePhoto"
+        android:layout_width="112dp"
+        android:layout_height="112dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="66dp"
+        android:background="@drawable/circle_mask"
+        android:clipToOutline="true"
+        android:contentDescription="Profile Photo"
+        android:scaleType="centerCrop"
+        android:src="@drawable/_x6_pas_photo"
+        android:translationY="0dp"
+        app:layout_constraintStart_toStartOf="@+id/view2"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/nameContainer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="60dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="@+id/view3"
+        app:layout_constraintStart_toEndOf="@+id/view3"
+        app:layout_constraintTop_toTopOf="@+id/view3"
+        app:layout_constraintVertical_bias="0.523">
+
+        <TextView
+            android:id="@+id/tvName"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kumbhsans"
+            android:text="Ghani Baskara Syah"
+            android:textColor="#FFC300"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/tvNim"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/kumbhsans"
+            android:text="245150700111008"
+            android:textColor="#FFFFFF"
+            android:textSize="12sp" />
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
