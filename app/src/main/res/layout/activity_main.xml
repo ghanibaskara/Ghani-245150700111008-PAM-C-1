@@ -724,18 +724,16 @@
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <ImageView
+    <com.google.android.material.imageview.ShapeableImageView
         android:id="@+id/profilePhoto"
         android:layout_width="112dp"
         android:layout_height="112dp"
         android:layout_marginStart="30dp"
         android:layout_marginTop="66dp"
-        android:background="@drawable/circle_mask"
-        android:clipToOutline="true"
         android:contentDescription="Profile Photo"
         android:scaleType="centerCrop"
         android:src="@drawable/_x6_pas_photo"
-        android:translationY="0dp"
+        app:shapeAppearanceOverlay="@style/CircleImage"
         app:layout_constraintStart_toStartOf="@+id/view2"
         app:layout_constraintTop_toTopOf="parent" />
 
